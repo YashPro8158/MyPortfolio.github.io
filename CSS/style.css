@@ -363,3 +363,12 @@
         }
     }
 }
+
+@media screen and (max-width:490px) {
+    .item1 .mainlist li a {
+        font-size: 14px;
+    }
+    .item1 .mainlist {
+        flex-wrap: wrap;
+    }
+}
