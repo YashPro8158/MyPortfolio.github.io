@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
-    <title>Grid Practice</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <title>YashBhola Portfolio</title>
+    <script src="https://kit.fontawesome.com/1afa8e26b7.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,29 +18,177 @@
                 <div class="logo">
                     <img src="./images/mylogo.jpg" alt="">
                 </div>
-                <ul class="mainlist">
+                <ul class="mainlist" id="hlist">
                     <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Contact">Contact Us</a></li>
-                    <li><a href="#Login">Login</a></li>
-                    <li><a href="#Signup" class="home">Signup</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li onclick="loginforms()"><a href="#Login">Login</a>
+                    </li>
+                    <div class="loginform" id="llist">
+                        <div class="login-1">
+                            <h1>LOGIN </h1>
+                            <form action="#">
+                                <div class="fillform">
+                                    <i class="fas fa-user"></i> <input type="text" placeholder="UserName" required><br>
+                                    <i class="fas fa-lock"></i><input type="password" placeholder="Password" required><br>
+                                    <div class="btns">
+                                        <button type="submit">Login</button>
+                                        <button onclick="closelform()">Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <li><a href="#Signup" class="home" onclick="signupfill()">Signup</a></li>
+                    <div class="signupform" id="ulist">
+                        <div class="signup-1">
+                            <h1>Signup </h1>
+                            <form action="#">
+                                <div class="fillform">
+                                    <i class="fas fa-user"></i> <input type="text" placeholder="UserName" required><br>
+                                    <i class="fas fa-envelope-square"></i>
+                                    <input type="email" placeholder="Email" required><br>
+                                    <i class="fas fa-lock"></i><input type="password" placeholder="Password" required><br>
+                                    <div class="btns">
+                                        <button type="submit">Signup</button>
+                                        <button onclick="closesform()">Cancel</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </ul>
             </div>
-            <div class="grid-item item2">
+            <div class="grid-item item2 " id="Home">
 
                 <div class="right-3D">
                     <img src="./images/my_3d_image.png" alt="">
                 </div>
                 <div class="my_content">
                     <img src="./images/model2.png" alt="myimage error">
+                    <div class="colorful"></div>
                     <h1>"WELCOME TO MY WEBSITE"</h1>
                     <h2>Hello My Name is Yash Bhola</h2>
                 </div>
             </div>
         </div>
+        <div class="grid-item" id="about">
+            <div class="left-container_about">
+                <img src="./images/model2.png" alt="myimage error">
+            </div>
+            <div class="right-content">
+                <h1>Who Am I</h1>
+                <div class="para">
+                    <p>I am Yash Bhola from Delhi, India, who is proud to be an Indian. I am a frontend web developer who develops the frontend design of your website. Also become a full stack web developer in life. I have a lovely family in my house. My
+                        lovely mother is a housewife named Manju Devi, two lovely sisters and one elder brother. I thank God that he has given me a very loving family who love me more and more and provide me what I want before I talk for anything. Any
+                        type of website do you need i can make it for FREE</p>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item" id="services">
+            <div class="servicesbox box1">
+                <h1>Web Desiging</h1>
+                <p>Want to Sell you product or build your own personal website i can make it and grow your personality and business on world. Any type of website like E-commerce , portfolio, business,Education or Technoly Etc.</p>
+                <a href="#BuyNow">Buy This Service Now</a><i class="fas fa-shopping-cart"></i>
+                <br>
+                <p style="visibility: hidden; padding: 10px;">Lorem ipsum, dolor </p>
+            </div>
+            <div class="servicesbox box2">
+                <h1>Photo Recovering</h1>
+                <p>Do You have bulk photos that is totaly damaged or seeing ugly I can recover your all lovely photos and make it beautifull for you With no cost Totaly Free </p>
+                <a href="#BuyNow">Buy This Service Now</a><i class="fas fa-shopping-cart"></i>
+                <br>
+                <p style="visibility: hidden; padding: 10px;">Lorem ipsum, dolor </p>
+            </div>
+            <div class="servicesbox box3">
+                <h1 style="font-size: 40px;">Responsive wordpress landing page</h1>
+                <p>Are you looking for a Perfect and Professional WordPress Developer? І wіll create a professional Landing Page ,App Landing Page, Website design Or Customize, Cоnvеrt PSD to Wordpress, , Similiar design of any website you want bу Elementor
+                    pro page builder, whісh will be rеsроnsіvе For аnу dеvісеs.Elementor Pro is the Fastest, Cleanest And Easiest Wordpress Page Builder on the Market Now.</p>
+                <a href="#BuyNow">Buy This Service Now</a><i class="fas fa-shopping-cart"></i>
+                <br>
+                <p style="visibility: hidden; padding: 10px;">Lorem ipsum, dolor </p>
+            </div>
+            <div class="servicesbox box4">
+                <h1>website onpage SEO </h1>
+                <p>Are you Looking for Search Engine Optimization of your wp site to make it more visible for search engines? Congratulations! you are at the Website. I would take care of all your OnPage SEO and On Page Optimization to boost up your website
+                    ranking in SERPS.Top Quality WordPress SEO Service Guaranteed</p>
+                <a href="#BuyNow">Buy This Service Now</a><i class="fas fa-shopping-cart"></i>
+                <br>
+                <p style="visibility: hidden; padding: 10px;">Lorem ipsum, dolor </p>
+            </div>
+        </div>
+        <div class="grid-item" id="contact">
+            <div class="leftcontact-container">
+                <div class="backgroundimage">
+                    <img src="./images/Contact-left-image.png" alt="">
+                </div>
+            </div>
+            <div class="contactform">
+                <form action="#">
+                    <h1>CONTACT ME</h1>
+                    <input type="text" placeholder="Name" required><br>
+                    <input type="email" placeholder="Email" required><br>
+                    <textarea name="Your message" id="" cols="30" rows="10" placeholder="Your Message" required></textarea><br>
+                    <input type="submit" value="submit" class="sbmt_btn">
+                </form>
+                <h1>FOLLOW ME ON</h1>
+                <div class="socialmedia">
+                    <div class="mediabox" title="Facebook">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="mediabox" title="Twitter">
+                        <a href="#">
+                            <i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="mediabox" title="Instagram">
+                        <a href="#">
+                            <i class="fab fa-instagram"></i></a>
+                    </div>
+                    <div class="mediabox" title="Youtube">
+                        <a href="#">
+                            <i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ================= Footer ============> -->
+        <div class="grid-item" id="footer">
+            <h1>Copright@ by YashBhola</h1>
+            <ul class="mainlist">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#Login" onclick="loginforms()">Login</a></li>
+                <li><a href="#Signup" class="home" onclick="signupfill()">Signup</a></li>
+            </ul>
+        </div>
     </nav>
+    <script>
+        function loginforms() {
+            // document.getElementById("hlist").classList.toggle("active");
+            document.getElementById("llist").classList.toggle("active");
+            document.getElementById("ulist").classList.remove("signupactive");
 
+        }
+
+        function closelform() {
+
+            document.getElementById("llist").classList.remove("active");
+        }
+
+        function signupfill() {
+
+            document.getElementById("llist").classList.remove("active");
+            document.getElementById("ulist").classList.toggle("signupactive");
+        }
+
+        function closesform() {
+
+            document.getElementById("ulist").classList.remove("signupactive");
+        }
+    </script>
 </body>
 
 </html>
