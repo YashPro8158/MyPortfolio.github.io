@@ -622,6 +622,7 @@
             border-bottom: 4px solid #ee5253;
             width: 50%;
         }
+        /* <<<<<<< HEAD */
         
         #contact .contactform {
             width: 70%;
@@ -1130,3 +1131,14 @@
                 height: 100px;
             }
         }
+        /* ======= */
+        
+        @media screen and (max-width:490px) {
+            .item1 .mainlist li a {
+                font-size: 14px;
+            }
+            .item1 .mainlist {
+                flex-wrap: wrap;
+            }
+        }
+        /* >>>>>>> 9b8ea98617d1ad97e43616b37240c4353c4f9107 */
