@@ -551,19 +551,20 @@
         }
         
         #services .servicesbox a::before {
-            content: '';
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            width: 0%;
-            height: 100%;
-            background: rgba(231, 91, 221, 1.0);
-            background: -webkit-radial-gradient(bottom, rgba(231, 91, 221, 1.0), rgba(61, 97, 254, 1.0));
-            background: -moz-radial-gradient(bottom, rgba(231, 91, 221, 1.0), rgba(61, 97, 254, 1.0));
-            background: radial-gradient(to top, rgba(231, 91, 221, 1.0), rgba(61, 97, 254, 1.0));
-            border: 10px;
-            z-index: -1;
-            transition: 0.3s;
+          content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background: rgba(231, 91, 221, 1.0);
+    background: black;
+    border-radius: 10px;
+    background: -moz-radial-gradient(bottom, rgba(231, 91, 221, 1.0), rgba(61, 97, 254, 1.0));
+    background: radial-gradient(to top, rgba(231, 91, 221, 1.0), rgba(61, 97, 254, 1.0));
+    border: 10px;
+    z-index: -1;
+    transition: 0.3s;
         }
         
         #services .servicesbox a:hover::before {
